@@ -1,0 +1,194 @@
+/* A Free Design by Bryant Smith (bryantsmith.com) */
+
+body {
+	margin: 0;
+	padding: 0;
+	background: #333333 url(images/img01.gif) repeat-x;
+	text-align: justify;
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-size: 13px;
+	color: #666666;
+	background-color:#252F33;
+}
+*
+{
+  margin: 0 auto 0 auto;
+ text-align:left;}
+
+#header {
+	position:relative;
+	width: 100%;
+	height:99px;
+	margin-left:0px;
+	margin-right:0px;
+	background: #888888 no-repeat;
+}
+
+#page
+{
+  margin: 0 auto 0 auto; 
+  display: table; 
+  height: 100%;  
+  position: relative; 
+  overflow: hidden; 
+  width: 900px;
+}
+
+
+.title
+{
+position:relative;
+left:30px;
+top:22px;
+text-align:left;
+font-family:Georgia, "Times New Roman", Times, serif;
+font-size:32px;
+font-weight:bold;
+color:#DEBB73;
+}
+
+.subText
+{
+position:relative;
+left:62px;
+top:26px;
+text-align:left;
+font-family:Georgia, "Times New Roman", Times, serif;
+font-size:16px;
+font-weight:bold;
+color:#EEDDB9;
+}
+
+
+.articleTitle
+{
+text-align:left;
+padding-left:25px;
+padding-top:10px;
+padding-bottom:10px;
+color: #6A0020;
+font-family:Verdana, Arial, Helvetica, sans-serif;
+font-size:22px;
+font-weight:bold;
+}
+
+.articleContent
+{
+width:auto;
+position:relative;
+padding-left:25px;
+color:#101214;
+text-align:left;
+font-family:Arial, Helvetica, sans-serif;
+line-height:27px;
+}
+
+.rightLinks
+{
+width: 102px;
+font-size:11px;
+font-weight:bold;
+line-height:21px;
+height:auto;
+margin-right:-3px;
+background-image:url(links_branch.png);
+background-repeat:no-repeat;
+text-align:right;
+float:right;
+}
+
+.rightLinks a:hover
+{
+color:#667765;
+}
+
+
+
+.rightLinks .linkTitle
+{
+font-size:12px;
+font-weight:bold;
+margin-top:10px;
+margin-bottom:32px;
+margin-right:1px;
+color:#2B000D;
+}
+
+
+#bar
+{
+	position:relative;
+	width: 680px;
+	height:57px;
+	margin-left:29px;
+	margin-right:21px;
+	background: url(bar.png) no-repeat;
+}
+
+.menuLink
+{
+	height:37px;
+	width: 105px;
+	text-align:center;
+	float:left;
+	font-family:Geneva, Arial, Helvetica, sans-serif;
+	font-size:14px;
+	font-weight:bold;
+	color:#EAD5A8;
+	padding-top:18px;
+}
+
+.menuLink a
+{
+	color:#EAD5A8;
+}
+
+.menuLink a:hover
+{
+	color:#DEBB73;
+}
+
+
+.menuLink:hover
+{
+	background: url(bar2.png) repeat-x;
+}
+
+a
+{
+text-decoration:none;
+color:#252F33;
+}
+
+#pageContent
+{
+width: 100%;
+height:auto;
+margin-top:50px;
+margin-left:25px;
+margin-right:25px;
+padding-bottom:20px;
+}
+
+#footer {
+
+	width: 730px;
+	height:60px;
+	background: url(footer.png) no-repeat;
+text-align:center;
+font-size:10px;
+color:#AC8228;
+padding-top:32px;
+}
+
+#footer a
+{
+font-size:10px;
+color:#AC8228;
+}
+
+
+html, body {
+text-align: center;
+}
+p {text-align: left;}

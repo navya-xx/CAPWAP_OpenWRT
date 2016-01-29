@@ -1,0 +1,6 @@
+# Settings File for WTP. Lines beginning with # and blank lines will be ignored
+#
+
+#
+<IF_NAME>    wlan2
+

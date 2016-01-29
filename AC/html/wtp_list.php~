@@ -1,0 +1,46 @@
+<?php
+	$cmd_line = "cd /home/navneet/workspace/capwap-wum/wum/ \n ./wum -c wtps";
+	exec($cmd_line, $test_cmd, $retVal);
+	
+if($retVal != 0) {
+	echo 0;
+	exit();
+}
+
+$wtp_array = array();
+$version_arr = array();
+$version = array();
+
+foreach($test_cmd as $key=>$val) {
+	if($key>3 && $key<(sizeof($test_cmd)-1)) {
+		//print($val);
+		$wtp_arr = explode("|", $val);
+		//var_dump($wtp_arr);
+
+		$wtpid = intval($wtp_arr[1]);
+		$test_cmd_1 = array();
+		$cmd_line_1 = "cd /home/navneet/workspace/capwap-wum/wum/ \n ./wum -c version -w $wtpid";
+		//echo $cmd_line_1;
+		exec($cmd_line_1, $test_cmd_1, $retVal_1);
+		if($retVal_1 != 0) {
+			echo 0;
+			exit();
+		}
+		//var_dump($test_cmd_1);
+				$version_arr = explode("|", $test_cmd_1[3]);
+				if ($version_arr[1] == $wtpid) {
+					$version = explode(".",$version_arr[3]);
+					//echo $version[0]."\n";
+				}
+			
+		
+		if($wtp_arr[1] != "")
+			$wtp_array[intval($wtp_arr[1])] = $wtp_arr[2] . "|" . $version[0];
+		
+	}	
+}
+
+echo json_encode($wtp_array);
+//echo $wtp_array;
+
+?>
